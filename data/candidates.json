@@ -1,0 +1,236 @@
+{
+  "schema_version": 1,
+  "description": "候选人档案与六项能力画像。按简历内容关联已有记录，内容变更后保留待复核状态。",
+  "candidates": [
+    {
+      "id": "qualified_resume",
+      "filename": "陈思远简历-FDE工程师.docx",
+      "content_sha256": "8da43150683b72359be3c2d871e6abd2676e9d6f0b3465c0134e0ec2f6662a41",
+      "candidate_name": "陈思远",
+      "candidate_email": "siyuan.chen@talentscope.cn",
+      "parsed_features": {
+        "candidate_phone": "13810246831",
+        "education": "计算机科学与技术硕士",
+        "years_experience": 8,
+        "skills": [
+          "Python",
+          "SQL",
+          "LangChain",
+          "LangGraph",
+          "FastAPI",
+          "Docker",
+          "PostgreSQL",
+          "API集成"
+        ]
+      },
+      "profile_score": {
+        "radar": {
+          "business_understanding": 92,
+          "solution_judgment": 88,
+          "engineering_integration": 94,
+          "evaluation_troubleshooting": 90,
+          "communication_collaboration": 88,
+          "delivery_reuse": 92
+        }
+      },
+      "is_qualified": true,
+      "evaluation_report": "具备业务调研、方案比较、接口集成、评测与交付记录。建议面试时核实项目成果与独立承担的职责。",
+      "text_sha256": "3ee6f083c6649d9bc6f8fb98323adbafd1cb01d1e18ce04e6a1fde1cd3e5dd66"
+    },
+    {
+      "id": "rejected_resume",
+      "filename": "周雨晴简历-FDE工程师.docx",
+      "content_sha256": "9152b72254c1fc233dc5cff73ddee62cbfba51ca5fed17fff8db20e030f67f89",
+      "candidate_name": "周雨晴",
+      "candidate_email": "yuqing.zhou@talentscope.cn",
+      "parsed_features": {
+        "candidate_phone": "13751820642",
+        "education": "市场营销大专",
+        "years_experience": 4,
+        "skills": [
+          "客户沟通",
+          "服务流程梳理",
+          "质量巡检",
+          "问题跟进",
+          "Excel数据整理"
+        ]
+      },
+      "profile_score": {
+        "radar": {
+          "business_understanding": 76,
+          "solution_judgment": 38,
+          "engineering_integration": 20,
+          "evaluation_troubleshooting": 58,
+          "communication_collaboration": 80,
+          "delivery_reuse": 32
+        }
+      },
+      "is_qualified": false,
+      "evaluation_report": "有客户沟通和现场问题跟进经历，编程、系统集成及完整交付经历不足。",
+      "text_sha256": "32e66d9fb449fad066cf6a3739e8b8a590a2eba959327c84f95c9ca91d354e0a"
+    },
+    {
+      "id": "rejected_resume_2",
+      "filename": "许文博简历-FDE工程师.docx",
+      "content_sha256": "7e5263b5528c445297866ee0563095d4a24195f925ea0dd53104dbf128d8f5af",
+      "candidate_name": "许文博",
+      "candidate_email": "wenbo.xu@talentscope.cn",
+      "parsed_features": {
+        "candidate_phone": "13962481753",
+        "education": "旅游管理本科",
+        "years_experience": 4,
+        "skills": [
+          "客户接待",
+          "排班管理",
+          "服务流程优化",
+          "PPT汇报",
+          "Excel数据整理"
+        ]
+      },
+      "profile_score": {
+        "radar": {
+          "business_understanding": 62,
+          "solution_judgment": 28,
+          "engineering_integration": 16,
+          "evaluation_troubleshooting": 28,
+          "communication_collaboration": 76,
+          "delivery_reuse": 24
+        }
+      },
+      "is_qualified": false,
+      "evaluation_report": "主要经历为酒店运营和客户服务，尚需补充编程、评测和软件项目交付证据。",
+      "text_sha256": "bb3b13907fdd05f593a356756f11aae94e84b6fb84ba53a4035e49c54a60d4ab"
+    },
+    {
+      "id": "rejected_resume_3",
+      "filename": "宋婉宁简历-FDE工程师.docx",
+      "content_sha256": "0b96c4100f8425fda6f7079d8308c22ffa6c70a1cf7ef048033dcbc70cd6fdd3",
+      "candidate_name": "宋婉宁",
+      "candidate_email": "wanning.song@talentscope.cn",
+      "parsed_features": {
+        "candidate_phone": "15840723691",
+        "education": "视觉传达设计本科",
+        "years_experience": 3,
+        "skills": [
+          "Photoshop",
+          "Illustrator",
+          "品牌视觉",
+          "海报设计",
+          "短视频剪辑"
+        ]
+      },
+      "profile_score": {
+        "radar": {
+          "business_understanding": 36,
+          "solution_judgment": 30,
+          "engineering_integration": 20,
+          "evaluation_troubleshooting": 22,
+          "communication_collaboration": 56,
+          "delivery_reuse": 30
+        }
+      },
+      "is_qualified": false,
+      "evaluation_report": "主要经历为视觉设计与内容制作，与当前岗位的技术集成和客户交付要求存在差距。",
+      "text_sha256": "95720a1fb62d5de36387de398d59f73f7b18e8fe252480ca190ee956b26265fa"
+    },
+    {
+      "id": "manual_review_resume",
+      "filename": "林嘉航简历-FDE工程师.docx",
+      "content_sha256": "efec60bf3ccd61fe8b32e8003cf8f134610177686258b81c6c5f19e279654720",
+      "candidate_name": "林嘉航",
+      "candidate_email": "jiahang.lin@talentscope.cn",
+      "parsed_features": {
+        "candidate_phone": "18672849135",
+        "education": "软件工程本科",
+        "years_experience": 5,
+        "skills": [
+          "Python基础",
+          "FastAPI基础调用",
+          "现场访谈",
+          "测试用例",
+          "日志分析",
+          "跨团队协作"
+        ]
+      },
+      "profile_score": {
+        "radar": {
+          "business_understanding": 84,
+          "solution_judgment": 44,
+          "engineering_integration": 50,
+          "evaluation_troubleshooting": 82,
+          "communication_collaboration": 86,
+          "delivery_reuse": 40
+        }
+      },
+      "is_qualified": null,
+      "evaluation_report": "客户访谈、问题跟进和协作记录较明确；独立选型、复杂集成及项目收尾职责需要进一步核实。",
+      "text_sha256": "3ef42ecb54e8d27e20c5a72f4f3999f07bc7cf6e01a730c0aa1f88c216eaa063"
+    },
+    {
+      "id": "manual_review_resume_2",
+      "filename": "郭承泽简历-FDE工程师.docx",
+      "content_sha256": "a6f7680cee4bf4144201b6e3455494795fec370fe066d92f18d7ae42d7553860",
+      "candidate_name": "郭承泽",
+      "candidate_email": "chengze.guo@talentscope.cn",
+      "parsed_features": {
+        "candidate_phone": "13590642187",
+        "education": "电子信息工程硕士",
+        "years_experience": 6,
+        "skills": [
+          "Python",
+          "Go",
+          "Docker",
+          "Kubernetes",
+          "消息队列",
+          "基础模型调用"
+        ]
+      },
+      "profile_score": {
+        "radar": {
+          "business_understanding": 58,
+          "solution_judgment": 60,
+          "engineering_integration": 86,
+          "evaluation_troubleshooting": 62,
+          "communication_collaboration": 66,
+          "delivery_reuse": 64
+        }
+      },
+      "is_qualified": null,
+      "evaluation_report": "有平台开发与系统集成经验；需核实需求分析、方案判断、客户验收与复用成果。",
+      "text_sha256": "245b466e779a83ab85364f21169e9588da9ef2fd46ce02ec9d47670adf38031d"
+    },
+    {
+      "id": "manual_review_resume_3",
+      "filename": "唐若溪简历-FDE工程师.docx",
+      "content_sha256": "c1547db2a9611935af99c97de6d8bf0b02fe061e1b88e0939da42969a207904f",
+      "candidate_name": "唐若溪",
+      "candidate_email": "ruoxi.tang@talentscope.cn",
+      "parsed_features": {
+        "candidate_phone": "18731596240",
+        "education": "计算机科学本科",
+        "years_experience": 4,
+        "skills": [
+          "Java",
+          "Python",
+          "FastAPI",
+          "MySQL",
+          "Redis",
+          "LangChain"
+        ]
+      },
+      "profile_score": {
+        "radar": {
+          "business_understanding": 48,
+          "solution_judgment": 52,
+          "engineering_integration": 82,
+          "evaluation_troubleshooting": 70,
+          "communication_collaboration": 58,
+          "delivery_reuse": 42
+        }
+      },
+      "is_qualified": null,
+      "evaluation_report": "有后端与接口开发经验；独立部署、客户沟通及交付文档记录需要进一步核实。",
+      "text_sha256": "81dc5420ec9af86dfaffc5c89fe1c17164c5ac8048879f574934605674846c28"
+    }
+  ]
+}

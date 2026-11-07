@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TalentScope · 智能招聘工作台</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="./styles.css?v=0.1.3" />
+    <link rel="stylesheet" href="./workflow.css?v=0.1.3" />
+    <link rel="stylesheet" href="./ibm-theme.css?v=0.1.3" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark">TS</span><div><strong>TalentScope</strong></div></div>
+      <div class="top-actions"><span id="serviceDot" class="service-dot" style="background:#a8a8a8"></span><span id="serviceStatus" role="status">数据服务检测中</span><button id="checkServiceBtn" class="btn ghost">检测连接</button><button id="exportBtn" class="btn ghost" disabled title="当前版本未启用导出">导出 Excel</button></div>
+    </header>
+
+    <main>
+      <section class="page-heading">
+        <div><h1>批量简历审核</h1></div>
+        <div class="heading-actions"><button id="batchRejectBtn" class="btn ghost" disabled title="当前版本未接入通知服务">批量婉拒</button><button id="batchInterviewBtn" class="btn primary" disabled title="当前版本未接入通知服务">批量发送面试通知</button></div>
+      </section>
+
+      <section class="metrics">
+        <article><span>本批简历</span><strong id="totalMetric">0</strong></article>
+        <article><span>建议面试</span><strong id="qualifiedMetric">0</strong></article>
+        <article><span>暂不匹配</span><strong id="rejectedMetric">0</strong></article>
+        <article><span>平均匹配度</span><strong id="averageMetric">--</strong></article>
+      </section>
+
+      <section class="workspace">
+        <aside class="import-panel">
+          <div class="section-title"><div><h2>导入简历</h2></div><span class="count-pill" id="fileCount">0</span></div>
+          <label class="dropzone" id="dropzone" for="resumeFiles">
+            <input id="resumeFiles" type="file" accept=".docx,.pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/pdf" multiple />
+            <span class="upload-icon">↑</span><strong>选择或拖入简历</strong><small>Word（.docx）或 PDF</small>
+          </label>
+          <div id="fileQueue" class="file-queue"></div>
+          <button id="analyzeBtn" class="btn primary full" disabled>开始批量审核</button>
+          <div id="progressBox" class="progress-box" hidden><div><span id="progressText">正在分析</span><b id="progressValue">0%</b></div><div class="progress-track"><i id="progressBar"></i></div></div>
+        </aside>
+
+        <section class="results-panel">
+          <div class="result-toolbar">
+            <div class="tabs"><button class="active" data-filter="all">全部 <b id="allCount">0</b></button><button data-filter="qualified">建议面试 <b id="passCount">0</b></button><button data-filter="rejected">暂不匹配 <b id="failCount">0</b></button><button data-filter="review">待人工复核 <b id="reviewCount">0</b></button></div>
+            <div class="search"><span>⌕</span><input id="searchInput" placeholder="搜索姓名、技能或学历" /></div>
+            <button id="clearResultsBtn" class="btn ghost" disabled>清空结果</button>
+          </div>
+          <div id="statusBox" class="status-box" hidden></div>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th class="check-col"><input id="selectAll" type="checkbox" disabled title="当前版本未启用批量通知" /></th><th>候选人</th><th>核心画像</th><th>匹配度</th><th>筛选结果</th><th>操作</th></tr></thead>
+              <tbody id="candidateRows"><tr><td colspan="6" class="empty-table"><strong>等待导入简历</strong></td></tr></tbody>
+            </table>
+          </div>
+        </section>
+
+        <aside class="detail-panel" id="detailPanel">
+          <div class="detail-empty"><span class="detail-icon">◎</span><strong>候选人洞察</strong><p>选择候选人，查看画像</p></div>
+        </aside>
+      </section>
+    </main>
+    <div id="toast" class="toast" hidden></div>
+    <script type="module" src="./app.js?v=0.1.3"></script>
+  </body>
+</html>

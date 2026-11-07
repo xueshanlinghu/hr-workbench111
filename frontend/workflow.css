@@ -1,0 +1,16 @@
+.badge.review { background: var(--amber-soft); color: var(--amber); }
+.modal-backdrop { position: fixed; inset: 0; z-index: 20; display: grid; place-items: center; padding: 24px; background: rgba(18, 28, 34, .52); }
+.modal-backdrop[hidden] { display: none; }
+.email-modal { width: min(620px, 100%); overflow: hidden; background: #fff; border-radius: 8px; box-shadow: 0 24px 60px rgba(10, 20, 26, .28); }
+.email-modal header { display: flex; align-items: flex-start; justify-content: space-between; padding: 22px 24px 16px; border-bottom: 1px solid var(--line); }
+.email-modal h2 { margin: 3px 0 0; font-size: 18px; }
+.modal-eyebrow { color: var(--green); font-size: 17.1px; font-weight: 800; }
+.icon-btn { width: 30px; height: 30px; border: 0; border-radius: 50%; background: #eef2f3; cursor: pointer; font-size: 17.1px; }
+.mail-meta { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 18px 24px 0; padding: 12px 14px; border-radius: 6px; background: #f7f9fa; }
+.mail-meta div { display: flex; flex-direction: column; gap: 3px; }
+.mail-meta span, .mail-label { color: var(--muted); font-size: 17.1px; font-weight: 700; }
+.mail-meta strong { font-size: 17.1px; }
+.mail-label { display: block; margin: 18px 24px 7px; }
+.mail-editor { display: block; width: calc(100% - 48px); height: 180px; margin: 0 24px; padding: 12px; resize: vertical; border: 1px solid #cbd6da; border-radius: 6px; outline: none; font-size: 17.1px; line-height: 1.7; }
+.mail-editor:focus { border-color: var(--green); box-shadow: 0 0 0 3px var(--green-soft); }
+.email-modal footer { display: flex; justify-content: flex-end; gap: 8px; padding: 18px 24px 22px; }

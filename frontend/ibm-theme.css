@@ -1,0 +1,48 @@
+:root {
+  --ink: #161616;
+  --muted: #525252;
+  --line: #c6c6c6;
+  --green: #0f62fe;
+  --green-dark: #0043ce;
+  --green-soft: #edf5ff;
+  --red: #da1e28;
+  --red-soft: #fff1f1;
+  --amber: #8e6a00;
+  --amber-soft: #fff8e1;
+  color: #161616;
+  background: #f4f4f4;
+}
+
+body { background: #f4f4f4; }
+.topbar { height: 76px; color: #f4f4f4; background: #161616; border-bottom: 0; }
+.brand-mark { border-radius: 0; background: #0f62fe; }
+.brand small, .top-actions { color: #c6c6c6; }
+.service-dot { background: #42be65; }
+.topbar .btn.ghost { color: #f4f4f4; background: #262626; border-color: #525252; }
+.page-heading h1 { font-weight: 500; }
+.metrics, .import-panel, .results-panel, .detail-panel { border-color: #dcdcdc; border-radius: 0; box-shadow: none; }
+.metrics article { border-color: #e0e0e0; }
+.metrics strong, .score { color: #0f62fe; }
+.metrics .positive { color: #0f62fe; }
+.btn { border-radius: 0; }
+.btn.primary { background: #0f62fe; }
+.btn.primary:hover { background: #0043ce; }
+.btn.ghost { border-color: #8d8d8d; }
+.dropzone { border-radius: 0; border-color: #8d8d8d; background: #f4f4f4; }
+.dropzone:hover, .dropzone.dragging { border-color: #0f62fe; background: #edf5ff; }
+.upload-icon { color: #0f62fe; background: #d0e2ff; }
+.tabs button.active { color: #0f62fe; border-bottom-color: #0f62fe; }
+.search, .row-action, .skill-list span { border-radius: 0; }
+.search:focus-within { border-color: #0f62fe; box-shadow: inset 0 -2px #0f62fe; }
+.score-bar i, .progress-track i { background: #0f62fe; }
+tbody tr:hover, tbody tr.active { background: #edf5ff; }
+.badge.pass { color: #0043ce; background: #d0e2ff; }
+.badge.review { color: #684e00; background: #fff1c2; }
+.avatar { color: #0043ce; background: #d0e2ff; }
+.skill-list span { color: #0043ce; background: #edf5ff; }
+.detail-icon, .modal-eyebrow { color: #0f62fe; }
+.email-modal, .mail-meta, .mail-editor, .icon-btn { border-radius: 0; }
+.mail-editor:focus { border-color: #0f62fe; box-shadow: inset 0 0 0 1px #0f62fe; }
+.toast { border-radius: 0; background: #161616; }
+.radar-empty { height:100%; display:flex; flex-direction:column; align-items:center; justify-content:center; color:#6f6f6f; font-size:17.1px; gap:8px; background:#f4f4f4; }
+
